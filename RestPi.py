@@ -7,7 +7,7 @@ GPIO.setmode(GPIO.BOARD)
 
 @app.route("/")
 def hello():
-	return "Hello world!" 
+	return "Welcome to RestPi! A REST API for Raspberry Pi!" 
 @app.route("/setInput")
 def setInput():
 	GPIO.setup(int(request.args.get('pin')), GPIO.IN)
@@ -26,7 +26,6 @@ def readPin():
 def writePin():
 	GPIO.output(request.args.get('pin'), request.args.get('state'))
 	return request.args.get('pin') + " is " + request.args.get('state') 
-
 
 if __name__ == "__main__":
 	app.run()
