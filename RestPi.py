@@ -6,7 +6,7 @@ app.config.from_object('config')
 GPIO.setmode(GPIO.BOARD)
 
 @app.route("/")
-def hello():
+def helloRestPi():
 	return "Welcome to RestPi! A REST API for Raspberry Pi!" 
 @app.route("/setInput")
 def setInput():
