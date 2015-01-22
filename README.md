@@ -3,6 +3,21 @@ RestPi
 
 Minimalist REST API built with Flask!
 
+Before using the server, run:
+
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+Install all RPi.GPIO dependencies.
+
+And then install framework dependencies:
+
+```
+sudo pip install flask
+```
+
 Start the server with
 
 ```
